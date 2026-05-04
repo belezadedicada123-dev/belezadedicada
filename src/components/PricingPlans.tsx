@@ -65,7 +65,7 @@ export function PricingPlans() {
             <div className="text-xs text-muted-foreground line-through">De R$ 1.358,00 por</div>
             <div className="flex items-baseline gap-1">
               <span className="text-sm text-gold">R$</span>
-              <span className="text-gradient-gold font-mono-display text-5xl font-bold">147,90</span>
+              <span className="text-gradient-gold font-mono-display text-5xl font-bold">59,90</span>
             </div>
             <p className="text-xs text-muted-foreground mt-1">Pagamento único • Acesso vitalício</p>
           </div>

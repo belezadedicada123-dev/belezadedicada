@@ -28,7 +28,7 @@ const faqs = [
   },
   {
     q: "Qual plano é o melhor para mim?",
-    a: "Se quer começar e testar, vá de Básico (R$ 29,90). Se quer acesso vitalício, comunidade e todos os bônus, o VIP Expert (R$ 147,90) é a escolha de 95% das alunas.",
+    a: "Se quer começar e testar, vá de Básico (R$ 29,90). Se quer acesso vitalício, comunidade e todos os bônus, o VIP Expert (R$ 59,90) é a escolha de 95% das alunas.",
   },
 ];
 

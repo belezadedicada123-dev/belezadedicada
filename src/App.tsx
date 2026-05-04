@@ -158,10 +158,10 @@ export function App() {
             </p>
             <p className="mt-4 text-sm text-gold uppercase tracking-widest">Plano VIP Expert</p>
             <p className="mt-1 font-mono-display text-5xl sm:text-6xl font-bold text-gradient-gold">
-              R$ 147,90
+              R$ 59,90
             </p>
             <p className="mt-3 inline-block rounded-full bg-success/20 px-4 py-1.5 text-sm font-bold text-success">
-              🔥 Economia de R$ 1.210,10
+              🔥 Economia de R$ 1.298,10
             </p>
             <p className="mt-4 text-xs text-muted-foreground">
               Ou comece pelo <strong className="text-foreground">Básico por R$ 29,90</strong>
