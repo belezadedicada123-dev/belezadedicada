@@ -6,7 +6,7 @@ const courses = [
   { name: "Long Bob", img: "/images/courses/02-long-bob.png" },
   { name: "Repicado Moderno", img: "/images/courses/03-repicado-moderno.jpg" },
   { name: "Cabelos Loiros", img: "/images/courses/04-cabelos-loiros.jpg" },
-  { name: "Pixie com Tesoura", img: "/images/courses/05-pixie-com-tesoura.png" },
+  { name: "Pixie com Tesoura", img: "/images/courses/05-pixie-com-tesoura-v2.png" },
   { name: "Pixie Desfiado", img: "/images/courses/06-pixie-desfiado.png" },
   { name: "Desfiado", img: "/images/courses/07-desfiado.jpg" },
   { name: "Short Bob", img: "/images/courses/08-short-bob.jpg" },
@@ -17,7 +17,7 @@ const courses = [
   { name: "Franja Bardot", img: "/images/courses/13-franja-bardot.png" },
   { name: "Franja Butterfly", img: "/images/courses/14-franja-butterfly.png" },
   { name: "BÔNUS: Colorimetria", img: "/images/courses/15-colorimetria.png" },
-  { name: "BÔNUS: Mechas Premium", img: "https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?w=600&q=80&auto=format&fit=crop" },
+  { name: "BÔNUS: Mechas Premium", img: "/images/courses/16-mechas-premium.png" },
 ];
 
 export const courseImages = courses.map((c) => c.img);
