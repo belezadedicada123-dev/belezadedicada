@@ -68,10 +68,10 @@ export function App() {
             Oferta Exclusiva
           </p>
           <h1 className="animate-fade-up delay-200 mt-3 font-display text-4xl sm:text-6xl lg:text-7xl font-bold leading-[1.05]">
-            Domine os Cortes que <span className="text-gradient-gold">Suas Clientes Pedem</span>
+            Aprenda os Cortes Mais Pedidos e <span className="text-gradient-gold">Dobre o Seu Faturamento</span>
           </h1>
           <p className="animate-fade-up delay-300 mt-4 font-display text-xl sm:text-2xl text-foreground/90">
-            16 Cursos de Corte Feminino — Do Básico ao Avançado
+            16 Cursos Completos de Corte Feminino — Transforme Sua Técnica e Lote Sua Agenda
           </p>
           <p className="animate-fade-up delay-400 mx-auto mt-5 max-w-2xl text-sm sm:text-base text-muted-foreground">
             Aprenda Butterfly, Long Bob, Pixie, Degradê e mais 12 técnicas com passo a passo em vídeo. Assista no seu ritmo e comece a aplicar nas clientes.
@@ -79,9 +79,9 @@ export function App() {
 
           <div className="animate-fade-up delay-500 mt-10 grid gap-4 sm:grid-cols-3">
             {[
-              { Icon: Award, label: "Certificado de conclusão" },
+              { Icon: Zap, label: "Acesso Imediato" },
               { Icon: InfinityIcon, label: "Acesso Vitalício (VIP)" },
-              { Icon: Headphones, label: "Suporte conforme o plano" },
+              { Icon: Headphones, label: "Suporte especializado" },
             ].map(({ Icon, label }) => (
               <div key={label} className="glass rounded-2xl p-5 text-left flex items-center gap-3">
                 <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-gold text-charcoal">
@@ -98,15 +98,15 @@ export function App() {
 
           <a
             href="#ofertas"
-            className="mt-8 inline-flex items-center justify-center gap-2 rounded-2xl bg-gradient-success px-8 py-5 text-base sm:text-lg font-bold text-success-foreground cta-glow animate-pulse-gold"
+            className="mt-8 inline-flex items-center justify-center gap-2 rounded-2xl bg-gradient-success px-8 py-5 text-base sm:text-lg font-bold text-success-foreground cta-glow animate-pulse-gold hover:scale-105 transition-transform"
           >
-            🔥 QUERO ME INSCREVER AGORA 🔥
+            🔥 QUERO DESTRAVAR MEU ACESSO AGORA 🔥
           </a>
           <p className="mt-3 text-xs sm:text-sm text-muted-foreground">
-            A partir de <span className="font-semibold text-foreground">R$ 29,90</span> • Plano VIP com acesso vitalício
+            Oferta de lançamento limitada a partir de <span className="font-semibold text-foreground">R$ 29,90</span>
           </p>
-          <p className="mt-2 text-sm text-gold">
-            💎 Escolha entre o Básico ou o VIP — comece do seu jeito
+          <p className="mt-2 text-sm text-gold font-semibold animate-pulse">
+            ⚠️ Atenção: As vagas com esse desconto podem encerrar a qualquer momento!
           </p>
         </div>
       </section>
@@ -179,10 +179,10 @@ export function App() {
               <Sparkles className="h-3.5 w-3.5" /> Escolha seu plano
             </span>
             <h2 className="mt-4 font-display text-3xl sm:text-5xl font-bold">
-              Dois jeitos de <span className="text-gradient-gold">começar hoje</span>
+              Não perca mais clientes por <span className="text-gradient-gold">falta de técnica</span>
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-              Comece testando ou destrave tudo de uma vez com acesso vitalício e bônus
+              Garanta seu acesso agora mesmo. Escolha o plano que melhor se adapta ao seu momento profissional antes que a promoção encerre!
             </p>
           </div>
           <PricingPlans />
@@ -208,7 +208,7 @@ export function App() {
               { n: "01", t: "Teoria Fundamentada", d: "Base sólida com conceitos atualizados." },
               { n: "02", t: "Prática Orientada", d: "Demonstrações passo a passo." },
               { n: "03", t: "Exercícios Práticos", d: "Atividades para fixar o aprendizado." },
-              { n: "04", t: "Certificação", d: "Reconhecimento profissional ao final." },
+              { n: "04", t: "Acesso Vitalício", d: "Revise sempre que precisar no plano VIP." },
             ].map((s) => (
               <div key={s.n} className="rounded-2xl border border-border bg-card p-6 hover-lift">
                 <span className="font-mono-display text-3xl font-bold text-gradient-gold">{s.n}</span>
@@ -229,11 +229,11 @@ export function App() {
             </div>
             <div className="glass-gold rounded-2xl p-6 flex items-center gap-4">
               <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-gold text-charcoal">
-                <GraduationCap className="h-5 w-5" />
+                <InfinityIcon className="h-5 w-5" />
               </span>
               <div>
-                <h3 className="font-semibold">Certificado de conclusão</h3>
-                <p className="text-sm text-muted-foreground">Para usar no currículo e nas suas redes.</p>
+                <h3 className="font-semibold">Acesso Vitalício</h3>
+                <p className="text-sm text-muted-foreground">Estude no seu ritmo, sem prazo de validade (VIP).</p>
               </div>
             </div>
           </div>
@@ -329,7 +329,7 @@ export function App() {
           </h2>
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {[
-              { Icon: Award, t: "Certificado de conclusão", d: "Para o currículo e suas redes." },
+              { Icon: ShieldCheck, t: "Compra 100% Segura", d: "Seus dados estão totalmente protegidos." },
               { Icon: Headphones, t: "Suporte dedicado", d: "Conforme o plano que você escolher." },
               { Icon: InfinityIcon, t: "Assista quando quiser", d: "No seu ritmo, vitalício no VIP." },
               { Icon: RefreshCw, t: "Atualizações incluídas", d: "Sem custos adicionais no VIP." },
@@ -472,7 +472,7 @@ export function App() {
             <div>
               <h4 className="font-display font-semibold mb-4">Compromissos</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>🎓 Certificado de conclusão</li>
+                <li>⚡ Acesso Imediato</li>
                 <li>🔒 Pagamentos 100% Seguros</li>
                 <li>✅ Garantia de 7 Dias</li>
               </ul>

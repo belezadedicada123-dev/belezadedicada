@@ -3,7 +3,7 @@ import { Check, X, Star } from "lucide-react";
 const features = [
   { label: "Acesso aos 16 cursos", basic: true, vip: true },
   { label: "Acesso vitalício", basic: false, vip: true },
-  { label: "Certificado de conclusão", basic: "básico", vip: true },
+
   { label: "Comunidade Beleza Dedicada", basic: false, vip: true },
   { label: "Suporte prioritário", basic: false, vip: true },
   { label: "Atualizações e novos cursos", basic: false, vip: true },
@@ -38,7 +38,7 @@ export function PricingPlans() {
           <ul className="mb-6 space-y-2.5 text-sm">
             <Item>Acesso aos 16 cursos de corte</Item>
             <Item>Acesso por 30 dias</Item>
-            <Item>Certificado de conclusão digital</Item>
+
             <Item>Suporte por e-mail</Item>
             <Item negative>Sem comunidade exclusiva</Item>
             <Item negative>Sem bônus extras</Item>
@@ -72,7 +72,7 @@ export function PricingPlans() {
           <ul className="mb-6 space-y-2.5 text-sm">
             <Item>Tudo do Básico incluso</Item>
             <Item>Acesso vitalício</Item>
-            <Item>Certificado de conclusão</Item>
+
             <Item>Comunidade exclusiva (+2.000)</Item>
             <Item>Suporte prioritário</Item>
             <Item>Atualizações e novos cursos</Item>

@@ -6,10 +6,7 @@ const faqs = [
     q: "Preciso ter experiência prévia para fazer os cursos?",
     a: "Não. Os cursos foram pensados para todos os níveis — do absoluto iniciante à profissional experiente. Começamos do básico e evoluímos para técnicas avançadas.",
   },
-  {
-    q: "O certificado é reconhecido?",
-    a: "Sim. Você recebe certificado de conclusão que pode ser usado em currículos, redes sociais e como comprovação profissional para clientes e empregadores.",
-  },
+
   {
     q: "Por quanto tempo terei acesso aos cursos?",
     a: "No plano Básico, o acesso é de 30 dias. No plano VIP Expert o acesso é vitalício — você assiste no seu ritmo, quantas vezes quiser.",
