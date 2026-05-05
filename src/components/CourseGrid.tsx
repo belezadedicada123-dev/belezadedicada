@@ -2,11 +2,11 @@ import { Check } from "lucide-react";
 
 // Fotos reais do Unsplash/Pexels — cada uma representa o tipo de corte indicado
 const courses = [
-  { name: "Butterfly", img: "https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=600&q=80&auto=format&fit=crop" },
-  { name: "Long Bob", img: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&q=80&auto=format&fit=crop" },
-  { name: "Repicado Moderno", img: "https://images.unsplash.com/photo-1595475884562-073c30d45670?w=600&q=80&auto=format&fit=crop" },
-  { name: "Cabelos Loiros", img: "https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?w=600&q=80&auto=format&fit=crop" },
-  { name: "Pixie com Tesoura", img: "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=600&q=80&auto=format&fit=crop" },
+  { name: "Butterfly", img: "/images/courses/01-butterfly.jpg" },
+  { name: "Long Bob", img: "/images/courses/02-long-bob.png" },
+  { name: "Repicado Moderno", img: "/images/courses/03-repicado-moderno.jpg" },
+  { name: "Cabelos Loiros", img: "/images/courses/04-cabelos-loiros.jpg" },
+  { name: "Pixie com Tesoura", img: "/images/courses/05-pixie-com-tesoura.png" },
   { name: "Pixie Desfiado", img: "https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=600&q=80&auto=format&fit=crop" },
   { name: "Desfiado", img: "https://images.unsplash.com/photo-1600948836101-f9ffda59d250?w=600&q=80&auto=format&fit=crop" },
   { name: "Short Bob", img: "https://images.unsplash.com/photo-1607779097040-26e80aa78e66?w=600&q=80&auto=format&fit=crop" },
