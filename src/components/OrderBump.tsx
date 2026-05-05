@@ -1,58 +1,80 @@
 import { useState } from "react";
-import { Gift, ChevronDown } from "lucide-react";
+import { Gift, ChevronDown, CheckSquare, Square } from "lucide-react";
 
 export function OrderBump() {
   const [checked, setChecked] = useState(true);
+  
   return (
-    <div className="relative mx-auto max-w-3xl">
-      <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-10">
-        <span className="inline-flex animate-pulse-gold items-center gap-2 rounded-full bg-gradient-urgency px-4 py-1.5 text-xs font-bold text-cream shadow-lg">
-          ⚡ ADICIONAR À MINHA COMPRA (RECOMENDADO)
+    <div className="relative mx-auto max-w-3xl mt-8">
+      {/* Badge overlapping top - Fix overflow issue on mobile */}
+      <div className="absolute -top-4 left-0 right-0 flex justify-center z-20 px-4">
+        <span className="animate-pulse-urgency inline-flex items-center gap-2 rounded-full bg-gradient-urgency px-4 py-2 text-[10px] sm:text-xs font-bold text-white shadow-lg text-center leading-tight uppercase tracking-wide">
+          ⚡ Adicionar à minha compra (Recomendado)
         </span>
       </div>
-      <div className="rounded-3xl border-2 border-gold animate-border-glow bg-[oklch(0.96_0.05_85_/_0.97)] p-6 sm:p-8 shadow-gold-lg">
-        <label className="flex cursor-pointer items-start gap-4">
-          <input
-            type="checkbox"
-            checked={checked}
-            onChange={(e) => setChecked(e.target.checked)}
-            className="mt-1 h-7 w-7 shrink-0 cursor-pointer accent-[oklch(0.65_0.18_145)]"
-          />
-          <div className="flex-1">
-            <div className="flex flex-wrap items-center gap-2">
-              <Gift className="h-5 w-5 text-charcoal" />
-              <span className="font-display text-lg sm:text-xl font-bold text-charcoal">
-                SIM! Quero o Kit Profissional Completo por +R$ 27,00
-              </span>
+
+      <div 
+        className={`relative cursor-pointer overflow-hidden rounded-3xl border-2 transition-all duration-300 ${
+          checked ? "border-gold bg-gradient-card-premium shadow-gold-lg" : "border-border/50 bg-card/50 hover:border-gold/50"
+        } p-5 sm:p-8 pt-10 sm:pt-10`}
+        onClick={() => setChecked(!checked)}
+      >
+        {checked && <div className="absolute inset-0 bg-gold/5 pointer-events-none" />}
+        
+        <div className="flex items-start gap-4 sm:gap-6 relative z-10">
+          <div className="mt-1 shrink-0">
+            {checked ? (
+              <CheckSquare className="h-8 w-8 sm:h-10 sm:w-10 text-gold animate-scale-in drop-shadow-md" fill="currentColor" stroke="black" strokeWidth={1} />
+            ) : (
+              <Square className="h-8 w-8 sm:h-10 sm:w-10 text-muted-foreground/40 transition-colors" />
+            )}
+          </div>
+          
+          <div className="flex-1 min-w-0">
+            <div className="flex flex-wrap items-center gap-2 mb-2">
+              <Gift className={`h-5 w-5 sm:h-6 sm:w-6 ${checked ? "text-gold" : "text-muted-foreground"}`} />
+              <h4 className={`font-display text-lg sm:text-2xl font-bold leading-tight ${checked ? "text-foreground" : "text-muted-foreground"}`}>
+                SIM! Quero o Kit Profissional Completo por <span className={checked ? "text-gradient-gold" : ""}>+R$ 27,00</span>
+              </h4>
             </div>
-            <p className="mt-1 text-sm text-charcoal/80">
-              <span className="line-through">de R$ 297</span> por{" "}
-              <strong>R$ 27</strong> — <span className="font-bold text-[oklch(0.5_0.2_25)]">90% OFF só nesta tela</span>
+            
+            <p className="text-sm sm:text-base text-muted-foreground mb-6">
+              <span className="line-through opacity-70">de R$ 297,00</span> por{" "}
+              <strong className="text-foreground">R$ 27,00</strong> — <span className="font-bold text-success">90% OFF só nesta tela</span>
             </p>
 
-            <div className="mt-4 grid gap-2.5 text-sm text-charcoal">
-              <div className="flex items-center gap-2 rounded-lg bg-white/60 px-3 py-2">
-                <span>📘</span> E-book "Precificação Inteligente para Cabeleireiras" <span className="ml-auto text-charcoal/60 line-through text-xs">R$ 97</span>
+            <div className={`grid gap-3 transition-opacity duration-300 ${checked ? "opacity-100" : "opacity-50"}`}>
+              <div className="flex items-center gap-3 rounded-xl border border-border/40 bg-background/50 px-4 py-3 text-sm">
+                <span className="text-xl">📘</span> 
+                <span className="font-medium text-foreground/90 leading-tight">E-book "Precificação Inteligente para Cabeleireiras"</span>
+                <span className="ml-auto text-muted-foreground line-through text-xs whitespace-nowrap pl-2">R$ 97</span>
               </div>
-              <div className="flex items-center gap-2 rounded-lg bg-white/60 px-3 py-2">
-                <span>🎥</span> Mini-curso "Atendimento de Alto Padrão" <span className="ml-auto text-charcoal/60 line-through text-xs">R$ 127</span>
+              <div className="flex items-center gap-3 rounded-xl border border-border/40 bg-background/50 px-4 py-3 text-sm">
+                <span className="text-xl">🎥</span> 
+                <span className="font-medium text-foreground/90 leading-tight">Mini-curso "Atendimento de Alto Padrão"</span>
+                <span className="ml-auto text-muted-foreground line-through text-xs whitespace-nowrap pl-2">R$ 127</span>
               </div>
-              <div className="flex items-center gap-2 rounded-lg bg-white/60 px-3 py-2">
-                <span>📋</span> Planner Digital da Cabeleireira de Sucesso <span className="ml-auto text-charcoal/60 line-through text-xs">R$ 73</span>
+              <div className="flex items-center gap-3 rounded-xl border border-border/40 bg-background/50 px-4 py-3 text-sm">
+                <span className="text-xl">📋</span> 
+                <span className="font-medium text-foreground/90 leading-tight">Planner Digital da Cabeleireira de Sucesso</span>
+                <span className="ml-auto text-muted-foreground line-through text-xs whitespace-nowrap pl-2">R$ 73</span>
               </div>
             </div>
 
-            <div className="mt-4 flex flex-wrap items-center justify-between gap-3">
-              <span className="inline-flex items-center gap-2 rounded-full bg-charcoal px-3 py-1.5 text-xs font-bold text-gold">
-                🏆 95% das alunas adicionam este kit
-              </span>
-              <span className="text-xs font-semibold text-[oklch(0.5_0.2_25)]">
-                ⚠️ Esta oferta NÃO estará disponível depois
-              </span>
-            </div>
+            {checked && (
+              <div className="mt-7 flex flex-col sm:flex-row sm:items-center justify-between gap-4 animate-fade-up">
+                <span className="inline-flex items-center justify-center gap-2 rounded-full bg-gold/10 border border-gold/20 px-4 py-2 text-xs font-bold text-gold">
+                  🏆 95% das alunas adicionam este kit
+                </span>
+                <span className="text-xs font-semibold text-urgency sm:text-right">
+                  ⚠️ Esta oferta NÃO estará disponível depois
+                </span>
+              </div>
+            )}
           </div>
-          <ChevronDown className="mt-1 h-6 w-6 shrink-0 animate-bounce text-charcoal" />
-        </label>
+          
+          <ChevronDown className={`hidden md:block mt-2 h-7 w-7 shrink-0 transition-transform duration-300 text-gold opacity-50 ${checked ? "rotate-180" : "opacity-20"}`} />
+        </div>
       </div>
     </div>
   );
