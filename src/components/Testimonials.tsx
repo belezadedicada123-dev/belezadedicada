@@ -6,7 +6,7 @@ type Chat = { name: string; avatar: string; messages: Msg[] };
 const chats: Chat[] = [
   {
     name: "Marina 💇‍♀️",
-    avatar: "M",
+    avatar: "/images/avatars/marina.png",
     messages: [
       { from: "her", text: "Oi! Comecei o curso semana passada e já tô fazendo o Long Bob nas clientes 😍", time: "09:14" },
       { from: "me", text: "Que demais, Marina! Como tá sendo o retorno?", time: "09:15" },
@@ -15,7 +15,7 @@ const chats: Chat[] = [
   },
   {
     name: "Juliana ✂️",
-    avatar: "J",
+    avatar: "/images/avatars/juliana.png",
     messages: [
       { from: "her", text: "Gente, a comunidade é OUTRO NÍVEL", time: "14:02" },
       { from: "her", text: "Tirei dúvida de colorimetria e me responderam em 5 min 🙌", time: "14:02" },
@@ -24,7 +24,7 @@ const chats: Chat[] = [
   },
   {
     name: "Amanda 🌟",
-    avatar: "A",
+    avatar: "/images/avatars/amanda.png",
     messages: [
       { from: "her", text: "Comecei do zero, tinha medo de não dar conta", time: "20:45" },
       { from: "her", text: "Em 3 meses tô atendendo na minha sala em casa! 🥺", time: "20:45" },
@@ -33,7 +33,7 @@ const chats: Chat[] = [
   },
   {
     name: "Patrícia 💖",
-    avatar: "P",
+    avatar: "/images/avatars/patricia.png",
     messages: [
       { from: "her", text: "O módulo de Pixie salvou minha vida hahahah", time: "11:20" },
       { from: "her", text: "Cliente chorou de feliz com o resultado", time: "11:21" },
@@ -46,9 +46,7 @@ function Phone({ chat }: { chat: Chat }) {
     <div className="mx-auto w-full max-w-[300px] rounded-[2.2rem] border-[8px] border-charcoal-light bg-[#0b141a] shadow-elegant overflow-hidden">
       {/* WhatsApp header */}
       <div className="flex items-center gap-3 bg-[#202c33] px-4 py-3">
-        <div className="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-gold text-charcoal text-sm font-bold">
-          {chat.avatar}
-        </div>
+        <img src={chat.avatar} alt={chat.name} className="h-10 w-10 rounded-full object-cover border border-white/10 shadow-sm" />
         <div className="flex-1 min-w-0">
           <p className="text-sm font-semibold text-white truncate">{chat.name}</p>
           <p className="text-[10px] text-emerald-400">online</p>
