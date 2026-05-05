@@ -12,11 +12,11 @@ const courses = [
   { name: "Short Bob", img: "/images/courses/08-short-bob.jpg" },
   { name: "Cacheadas", img: "/images/courses/09-cacheadas.jpg" },
   { name: "Chanel", img: "/images/courses/10-chanel.png" },
-  { name: "Degradê", img: "https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=600&q=80&auto=format&fit=crop" },
-  { name: "Tendência", img: "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&q=80&auto=format&fit=crop" },
-  { name: "Franja Bardot", img: "https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=600&q=80&auto=format&fit=crop" },
-  { name: "Franja Butterfly", img: "https://images.unsplash.com/photo-1554519515-242161756769?w=600&q=80&auto=format&fit=crop" },
-  { name: "BÔNUS: Colorimetria", img: "https://images.unsplash.com/photo-1562322140-8baeececf3df?w=600&q=80&auto=format&fit=crop" },
+  { name: "Degradê", img: "/images/courses/11-degrade.jpg" },
+  { name: "Tendência", img: "/images/courses/12-tendencia.png" },
+  { name: "Franja Bardot", img: "/images/courses/13-franja-bardot.png" },
+  { name: "Franja Butterfly", img: "/images/courses/14-franja-butterfly.png" },
+  { name: "BÔNUS: Colorimetria", img: "/images/courses/15-colorimetria.png" },
   { name: "BÔNUS: Mechas Premium", img: "https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?w=600&q=80&auto=format&fit=crop" },
 ];
 
