@@ -52,40 +52,42 @@ export function PricingPlans() {
         </div>
 
         {/* VIP EXPERT */}
-        <div className="relative flex flex-col rounded-3xl border-2 border-gold bg-gradient-card-premium p-7 md:scale-[1.03] shadow-gold-lg animate-border-glow shimmer-overlay">
-          <span className="absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-gradient-gold px-4 py-1 text-xs font-bold text-charcoal shadow-gold">
+        <div className="relative flex flex-col md:scale-[1.03]">
+          <span className="absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-gradient-gold px-4 py-1 text-xs font-bold text-charcoal shadow-gold z-10">
             ⭐ MAIS POPULAR
           </span>
-          <div className="mb-4 flex items-center gap-2">
-            <Star className="h-6 w-6 text-gold" fill="currentColor" />
-            <h3 className="font-display text-2xl font-bold">VIP Expert</h3>
-          </div>
-          <p className="text-sm text-gold">Escolhido por 95% das alunas</p>
-          <div className="my-5">
-            <div className="text-xs text-muted-foreground line-through">De R$ 1.358,00 por</div>
-            <div className="flex items-baseline gap-1">
-              <span className="text-sm text-gold">R$</span>
-              <span className="text-gradient-gold font-mono-display text-5xl font-bold">59,90</span>
+          <div className="relative flex h-full flex-col rounded-3xl border-2 border-gold bg-gradient-card-premium p-7 shadow-gold-lg animate-border-glow shimmer-overlay">
+            <div className="mb-4 flex items-center gap-2 relative z-10">
+              <Star className="h-6 w-6 text-gold" fill="currentColor" />
+              <h3 className="font-display text-2xl font-bold">VIP Expert</h3>
             </div>
-            <p className="text-xs text-muted-foreground mt-1">Pagamento único • Acesso vitalício</p>
-          </div>
-          <ul className="mb-6 space-y-2.5 text-sm">
-            <Item>Tudo do Básico incluso</Item>
-            <Item>Acesso vitalício</Item>
+            <p className="text-sm text-gold relative z-10">Escolhido por 95% das alunas</p>
+            <div className="my-5 relative z-10">
+              <div className="text-xs text-muted-foreground line-through">De R$ 1.358,00 por</div>
+              <div className="flex items-baseline gap-1">
+                <span className="text-sm text-gold">R$</span>
+                <span className="text-gradient-gold font-mono-display text-5xl font-bold">59,90</span>
+              </div>
+              <p className="text-xs text-muted-foreground mt-1">Pagamento único • Acesso vitalício</p>
+            </div>
+            <ul className="mb-6 space-y-2.5 text-sm relative z-10">
+              <Item>Tudo do Básico incluso</Item>
+              <Item>Acesso vitalício</Item>
 
-            <Item>Comunidade exclusiva (+2.000)</Item>
-            <Item>Suporte prioritário</Item>
-            <Item>Atualizações e novos cursos</Item>
-            <Item>BÔNUS: Precificação Inteligente</Item>
-            <Item>BÔNUS: Atendimento Alto Padrão</Item>
-            <Item>BÔNUS: Planner Digital</Item>
-          </ul>
-          <a
-            href="#"
-            className="mt-auto inline-flex items-center justify-center rounded-xl bg-gradient-success px-5 py-4 text-sm font-bold text-success-foreground cta-glow"
-          >
-            🔥 QUERO SER VIP EXPERT 🔥
-          </a>
+              <Item>Comunidade exclusiva (+2.000)</Item>
+              <Item>Suporte prioritário</Item>
+              <Item>Atualizações e novos cursos</Item>
+              <Item>BÔNUS: Precificação Inteligente</Item>
+              <Item>BÔNUS: Atendimento Alto Padrão</Item>
+              <Item>BÔNUS: Planner Digital</Item>
+            </ul>
+            <a
+              href="#"
+              className="mt-auto inline-flex items-center justify-center rounded-xl bg-gradient-success px-5 py-4 text-sm font-bold text-success-foreground cta-glow relative z-10"
+            >
+              🔥 QUERO SER VIP EXPERT 🔥
+            </a>
+          </div>
         </div>
       </div>
 
