@@ -305,8 +305,7 @@ export function App() {
               <h2 className="mt-3 font-display text-3xl sm:text-4xl font-bold">
                 Acesso à Comunidade Exclusiva <span className="text-gradient-gold">Beleza Dedicada</span>
               </h2>
-              <ul className="mt-6 grid gap-3 sm:grid-cols-3">
-                <li className="flex items-center gap-2 text-sm"><Heart className="h-4 w-4 text-gold" /> 💬 Tire dúvidas</li>
+              <ul className="mt-6 grid gap-3 sm:grid-cols-2">
                 <li className="flex items-center gap-2 text-sm"><Users className="h-4 w-4 text-gold" /> 🤝 Networking</li>
                 <li className="flex items-center gap-2 text-sm"><Sparkles className="h-4 w-4 text-gold" /> ✨ Dicas exclusivas</li>
               </ul>
