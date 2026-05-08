@@ -80,8 +80,8 @@ export function App() {
           <div className="animate-fade-up delay-500 mt-10 grid gap-4 sm:grid-cols-3">
             {[
               { Icon: Zap, label: "Acesso Imediato" },
-              { Icon: InfinityIcon, label: "Acesso Vitalício (VIP)" },
-              { Icon: Headphones, label: "Suporte especializado" },
+              { Icon: InfinityIcon, label: "Acesso Vitalício" },
+              { Icon: Monitor, label: "100% Online" },
             ].map(({ Icon, label }) => (
               <div key={label} className="glass rounded-2xl p-5 text-left flex items-center gap-3">
                 <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-gold text-charcoal">
@@ -208,7 +208,7 @@ export function App() {
               { n: "01", t: "Teoria Fundamentada", d: "Base sólida com conceitos atualizados." },
               { n: "02", t: "Prática Orientada", d: "Demonstrações passo a passo." },
               { n: "03", t: "Exercícios Práticos", d: "Atividades para fixar o aprendizado." },
-              { n: "04", t: "Acesso Vitalício", d: "Revise sempre que precisar no plano VIP." },
+              { n: "04", t: "Acesso Vitalício", d: "Revise sempre que precisar em qualquer plano." },
             ].map((s) => (
               <div key={s.n} className="rounded-2xl border border-border bg-card p-6 hover-lift">
                 <span className="font-mono-display text-3xl font-bold text-gradient-gold">{s.n}</span>
@@ -233,7 +233,7 @@ export function App() {
               </span>
               <div>
                 <h3 className="font-semibold">Acesso Vitalício</h3>
-                <p className="text-sm text-muted-foreground">Estude no seu ritmo, sem prazo de validade (VIP).</p>
+                <p className="text-sm text-muted-foreground">Estude no seu ritmo, sem prazo de validade.</p>
               </div>
             </div>
           </div>
@@ -330,8 +330,8 @@ export function App() {
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {[
               { Icon: ShieldCheck, t: "Compra 100% Segura", d: "Seus dados estão totalmente protegidos." },
-              { Icon: Headphones, t: "Suporte dedicado", d: "Conforme o plano que você escolher." },
-              { Icon: InfinityIcon, t: "Assista quando quiser", d: "No seu ritmo, vitalício no VIP." },
+              { Icon: Heart, t: "Comunidade VIP", d: "Acesso exclusivo no plano VIP Expert." },
+              { Icon: InfinityIcon, t: "Assista quando quiser", d: "No seu ritmo, acesso vitalício." },
               { Icon: RefreshCw, t: "Atualizações incluídas", d: "Sem custos adicionais no VIP." },
               { Icon: Monitor, t: "100% Online", d: "Acesso de qualquer dispositivo." },
               { Icon: Palette, t: "Técnicas modernas", d: "Tendências que as clientes pedem." },

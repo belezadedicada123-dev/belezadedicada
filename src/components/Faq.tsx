@@ -9,11 +9,7 @@ const faqs = [
 
   {
     q: "Por quanto tempo terei acesso aos cursos?",
-    a: "No plano Básico, o acesso é de 30 dias. No plano VIP Expert o acesso é vitalício — você assiste no seu ritmo, quantas vezes quiser.",
-  },
-  {
-    q: "Como funciona o suporte?",
-    a: "Suporte por e-mail no plano Básico e suporte prioritário no plano VIP Expert, com acesso à comunidade exclusiva.",
+    a: "Em ambos os planos (Básico e VIP Expert), o acesso é vitalício — você assiste no seu ritmo, quantas vezes quiser.",
   },
   {
     q: "Consigo assistir pelo celular?",
@@ -25,7 +21,7 @@ const faqs = [
   },
   {
     q: "Qual plano é o melhor para mim?",
-    a: "Se quer começar e testar, vá de Básico (R$ 29,90). Se quer acesso vitalício, comunidade e todos os bônus, o VIP Expert (R$ 59,90) é a escolha de 95% das alunas.",
+    a: "Se quer começar com o essencial, vá de Básico (R$ 29,90). Se quer comunidade e todos os bônus, o VIP Expert (R$ 59,90) é a escolha de 95% das alunas.",
   },
 ];
 
