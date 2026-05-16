@@ -76,6 +76,19 @@ export function OrderBump() {
           <ChevronDown className={`hidden md:block mt-2 h-7 w-7 shrink-0 transition-transform duration-300 text-gold opacity-50 ${checked ? "rotate-180" : "opacity-20"}`} />
         </div>
       </div>
+      
+      <div className="mt-10 text-center animate-fade-up">
+        <a
+          href={checked ? "https://lastlink.com/p/C2F096D6F/checkout-payment/" : "https://lastlink.com/p/C493D23B0/checkout-payment/"}
+          target="_blank" rel="noopener noreferrer"
+          className="inline-flex items-center justify-center w-full sm:w-auto rounded-2xl bg-gradient-success px-8 py-5 text-base sm:text-lg font-bold text-success-foreground cta-glow animate-pulse-gold hover:scale-105 transition-transform"
+        >
+          🔥 {checked ? "QUERO O PACOTE COMPLETO VIP" : "QUERO APENAS O BÁSICO"} 🔥
+        </a>
+        <p className="mt-3 text-xs sm:text-sm text-muted-foreground">
+          Você será redirecionada para a página de pagamento 100% segura.
+        </p>
+      </div>
     </div>
   );
 }
