@@ -97,7 +97,7 @@ export function App() {
           </div>
 
           <a
-            href="https://lastlink.com/p/C2F096D6F/checkout-payment/"
+            href="https://lastlink.com/p/C493D23B0/checkout-payment/"
             target="_blank" rel="noopener noreferrer"
             className="mt-8 inline-flex items-center justify-center gap-2 rounded-2xl bg-gradient-success px-8 py-5 text-base sm:text-lg font-bold text-success-foreground cta-glow animate-pulse-gold hover:scale-105 transition-transform"
           >
@@ -264,7 +264,7 @@ export function App() {
 
         <div className="mt-12 text-center">
           <a
-            href="https://lastlink.com/p/C2F096D6F/checkout-payment/"
+            href="https://lastlink.com/p/C493D23B0/checkout-payment/"
             target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-2xl bg-gradient-success px-8 py-4 text-base font-bold text-success-foreground cta-glow"
           >
