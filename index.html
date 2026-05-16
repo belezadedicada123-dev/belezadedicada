@@ -34,6 +34,46 @@
         ]
       }
     </script>
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1081546237433193');
+    fbq('track', 'PageView');
+    </script>
+    <!-- End Meta Pixel Code -->
+    
+    <!-- CAPI Trigger -->
+    <script>
+      setTimeout(function() {
+        var getCookie = function(name) {
+          var match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+          if (match) return match[2];
+          return null;
+        };
+        var fbp = getCookie('_fbp');
+        var fbc = getCookie('_fbc') || (window.location.search.includes('fbclid=') ? 'fb.1.' + Date.now() + '.' + new URLSearchParams(window.location.search).get('fbclid') : null);
+        
+        fetch('/api/capi', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            eventName: 'PageView',
+            eventUrl: window.location.href,
+            fbp: fbp,
+            fbc: fbc
+          })
+        }).catch(function(e) { console.error('CAPI Error:', e); });
+      }, 1000);
+    </script>
+    <!-- End CAPI Trigger -->
   </head>
   <body>
     <div id="root"></div>
