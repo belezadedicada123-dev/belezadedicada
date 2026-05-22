@@ -41,10 +41,10 @@ export function SocialSection() {
       {socials.map(({ name, handle, href, cta, Icon, bg }) => (
         <a
           key={name}
-          href={href}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={`group relative overflow-hidden rounded-2xl ${bg} p-6 text-white shadow-lg hover-lift transition-all`}
+          onClick={() => {
+            window.location.href = href + window.location.search;
+          }}
+          className={`group relative overflow-hidden rounded-2xl ${bg} p-6 text-white shadow-lg hover-lift transition-all cursor-pointer`}
         >
           <div className="relative z-10 flex flex-col items-start gap-3">
             <Icon className="h-9 w-9 transition-transform duration-500 group-hover:scale-125 group-hover:rotate-6" />

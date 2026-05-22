@@ -37,13 +37,13 @@ export function Header() {
 
         <div className="flex items-center gap-2">
           <div className="hidden items-center gap-1 text-muted-foreground sm:flex">
-            <a href="https://instagram.com/belezadedicadaofc" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="p-2 hover:text-gold transition-colors">
+            <a onClick={() => { window.location.href = "https://instagram.com/belezadedicadaofc" + window.location.search; }} aria-label="Instagram" className="p-2 hover:text-gold transition-colors cursor-pointer">
               <Instagram className="h-4 w-4" />
             </a>
-            <a href="https://youtube.com/@belezadedicada" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="p-2 hover:text-gold transition-colors">
+            <a onClick={() => { window.location.href = "https://youtube.com/@belezadedicada" + window.location.search; }} aria-label="YouTube" className="p-2 hover:text-gold transition-colors cursor-pointer">
               <Youtube className="h-4 w-4" />
             </a>
-            <a href="https://tiktok.com/belezadedicadaoficial" target="_blank" rel="noopener noreferrer" aria-label="TikTok" className="p-2 hover:text-gold transition-colors">
+            <a onClick={() => { window.location.href = "https://tiktok.com/belezadedicadaoficial" + window.location.search; }} aria-label="TikTok" className="p-2 hover:text-gold transition-colors cursor-pointer">
               <Music2 className="h-4 w-4" />
             </a>
           </div>
@@ -74,13 +74,13 @@ export function Header() {
             <a href="#garantia" onClick={() => setMobileMenuOpen(false)} className="text-lg hover:text-gold">Garantia</a>
           </nav>
           <div className="mt-8 flex justify-center gap-4 text-muted-foreground">
-            <a href="https://instagram.com/belezadedicadaofc" target="_blank" rel="noopener noreferrer" className="p-2 hover:text-gold transition-colors">
+            <a onClick={() => { window.location.href = "https://instagram.com/belezadedicadaofc" + window.location.search; }} className="p-2 hover:text-gold transition-colors cursor-pointer">
               <Instagram className="h-5 w-5" />
             </a>
-            <a href="https://youtube.com/@belezadedicada" target="_blank" rel="noopener noreferrer" className="p-2 hover:text-gold transition-colors">
+            <a onClick={() => { window.location.href = "https://youtube.com/@belezadedicada" + window.location.search; }} className="p-2 hover:text-gold transition-colors cursor-pointer">
               <Youtube className="h-5 w-5" />
             </a>
-            <a href="https://tiktok.com/belezadedicadaoficial" target="_blank" rel="noopener noreferrer" className="p-2 hover:text-gold transition-colors">
+            <a onClick={() => { window.location.href = "https://tiktok.com/belezadedicadaoficial" + window.location.search; }} className="p-2 hover:text-gold transition-colors cursor-pointer">
               <Music2 className="h-5 w-5" />
             </a>
           </div>

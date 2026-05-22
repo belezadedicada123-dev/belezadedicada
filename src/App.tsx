@@ -97,9 +97,10 @@ export function App() {
           </div>
 
           <a
-            href="https://lastlink.com/p/C493D23B0/checkout-payment/"
-            target="_blank" rel="noopener noreferrer"
-            className="mt-8 inline-flex items-center justify-center gap-2 rounded-2xl bg-gradient-success px-8 py-5 text-base sm:text-lg font-bold text-success-foreground cta-glow animate-pulse-gold hover:scale-105 transition-transform"
+            onClick={() => {
+              window.location.href = "https://lastlink.com/p/C493D23B0/checkout-payment/" + window.location.search;
+            }}
+            className="mt-8 inline-flex items-center justify-center gap-2 rounded-2xl bg-gradient-success px-8 py-5 text-base sm:text-lg font-bold text-success-foreground cta-glow animate-pulse-gold hover:scale-105 transition-transform cursor-pointer"
           >
             🔥 QUERO DESTRAVAR MEU ACESSO AGORA 🔥
           </a>
@@ -264,9 +265,10 @@ export function App() {
 
         <div className="mt-12 text-center">
           <a
-            href="https://lastlink.com/p/C493D23B0/checkout-payment/"
-            target="_blank" rel="noopener noreferrer"
-            className="inline-flex items-center justify-center rounded-2xl bg-gradient-success px-8 py-4 text-base font-bold text-success-foreground cta-glow"
+            onClick={() => {
+              window.location.href = "https://lastlink.com/p/C493D23B0/checkout-payment/" + window.location.search;
+            }}
+            className="inline-flex items-center justify-center rounded-2xl bg-gradient-success px-8 py-4 text-base font-bold text-success-foreground cta-glow cursor-pointer"
           >
             🔥 QUERO APRENDER TODOS OS CORTES 🔥
           </a>
@@ -464,10 +466,10 @@ export function App() {
             <div>
               <h4 className="font-display font-semibold mb-4">Redes Sociais</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><a href="https://instagram.com/belezadedicadaofc" target="_blank" rel="noopener noreferrer" className="hover:text-gold">Instagram: @belezadedicadaofc</a></li>
-                <li><a href="https://youtube.com/@belezadedicada" target="_blank" rel="noopener noreferrer" className="hover:text-gold">YouTube: @belezadedicada</a></li>
-                <li><a href="https://facebook.com/belezadedicada" target="_blank" rel="noopener noreferrer" className="hover:text-gold">Facebook: /belezadedicada</a></li>
-                <li><a href="https://tiktok.com/belezadedicadaoficial" target="_blank" rel="noopener noreferrer" className="hover:text-gold">TikTok: @belezadedicadaoficial</a></li>
+                <li><a onClick={() => { window.location.href = "https://instagram.com/belezadedicadaofc" + window.location.search; }} className="hover:text-gold cursor-pointer">Instagram: @belezadedicadaofc</a></li>
+                <li><a onClick={() => { window.location.href = "https://youtube.com/@belezadedicada" + window.location.search; }} className="hover:text-gold cursor-pointer">YouTube: @belezadedicada</a></li>
+                <li><a onClick={() => { window.location.href = "https://facebook.com/belezadedicada" + window.location.search; }} className="hover:text-gold cursor-pointer">Facebook: /belezadedicada</a></li>
+                <li><a onClick={() => { window.location.href = "https://tiktok.com/belezadedicadaoficial" + window.location.search; }} className="hover:text-gold cursor-pointer">TikTok: @belezadedicadaoficial</a></li>
               </ul>
             </div>
             <div>

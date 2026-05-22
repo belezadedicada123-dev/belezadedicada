@@ -33,11 +33,11 @@ export function SocialSidebar() {
       {socials.map(({ name, href, Icon, color }) => (
         <a
           key={name}
-          href={href}
-          target="_blank"
-          rel="noopener noreferrer"
+          onClick={() => {
+            window.location.href = href + window.location.search;
+          }}
           aria-label={name}
-          className={`group relative flex h-11 w-11 items-center justify-center rounded-full glass-gold text-gold transition-all duration-300 hover:scale-110 hover:rotate-6 ${color} hover:text-background`}
+          className={`group relative flex h-11 w-11 items-center justify-center rounded-full glass-gold text-gold transition-all duration-300 hover:scale-110 hover:rotate-6 ${color} hover:text-background cursor-pointer`}
         >
           <Icon className="h-5 w-5" />
           <span className="pointer-events-none absolute right-full mr-3 whitespace-nowrap rounded-md bg-card px-2.5 py-1 text-xs font-medium text-foreground opacity-0 shadow-elegant transition-opacity group-hover:opacity-100">

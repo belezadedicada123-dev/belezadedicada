@@ -7,9 +7,10 @@ export function StickyMobileBar() {
           <p className="font-mono-display text-lg font-bold text-gradient-gold">R$ 29,90</p>
         </div>
         <a
-          href="https://lastlink.com/p/C493D23B0/checkout-payment/"
-          target="_blank" rel="noopener noreferrer"
-          className="flex-1 inline-flex items-center justify-center rounded-xl bg-gradient-success px-4 py-3 text-sm font-bold text-success-foreground cta-glow"
+          onClick={() => {
+            window.location.href = "https://lastlink.com/p/C493D23B0/checkout-payment/" + window.location.search;
+          }}
+          className="flex-1 inline-flex items-center justify-center rounded-xl bg-gradient-success px-4 py-3 text-sm font-bold text-success-foreground cta-glow cursor-pointer"
         >
           🔥 QUERO ME INSCREVER
         </a>

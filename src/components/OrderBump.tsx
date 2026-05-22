@@ -79,9 +79,10 @@ export function OrderBump() {
       
       <div className="mt-10 text-center animate-fade-up">
         <a
-          href={checked ? "https://lastlink.com/p/C2F096D6F/checkout-payment/" : "https://lastlink.com/p/C493D23B0/checkout-payment/"}
-          target="_blank" rel="noopener noreferrer"
-          className="inline-flex items-center justify-center w-full sm:w-auto rounded-2xl bg-gradient-success px-8 py-5 text-base sm:text-lg font-bold text-success-foreground cta-glow animate-pulse-gold hover:scale-105 transition-transform"
+          onClick={() => {
+            window.location.href = (checked ? "https://lastlink.com/p/C2F096D6F/checkout-payment/" : "https://lastlink.com/p/C493D23B0/checkout-payment/") + window.location.search;
+          }}
+          className="inline-flex items-center justify-center w-full sm:w-auto rounded-2xl bg-gradient-success px-8 py-5 text-base sm:text-lg font-bold text-success-foreground cta-glow animate-pulse-gold hover:scale-105 transition-transform cursor-pointer"
         >
           🔥 {checked ? "QUERO O PACOTE COMPLETO VIP" : "QUERO APENAS O BÁSICO"} 🔥
         </a>
