@@ -30,8 +30,9 @@ export function PricingPlans() {
           <div className="my-5">
             <div className="flex items-baseline gap-1">
               <span className="text-sm text-muted-foreground">R$</span>
-              <span className="font-mono-display text-5xl font-bold">29,90</span>
+              <span className="font-mono-display text-5xl font-bold">19,90</span>
             </div>
+            <p className="text-xs text-gold font-bold mt-1">Oferta de lançamento</p>
             <p className="text-xs text-muted-foreground mt-1">Pagamento único</p>
           </div>
           <ul className="mb-6 space-y-2.5 text-sm">
@@ -42,12 +43,10 @@ export function PricingPlans() {
             <Item negative>Sem bônus extras</Item>
           </ul>
           <a
-            onClick={() => {
-              window.location.href = "https://lastlink.com/p/C493D23B0/checkout-payment/" + window.location.search;
-            }}
-            className="mt-auto inline-flex items-center justify-center rounded-xl border border-gold/40 px-5 py-3 text-sm font-semibold text-gold hover:bg-gold/10 transition cursor-pointer"
+            href={"https://lastlink.com/p/C493D23B0/checkout-payment/" + window.location.search}
+            className="mt-auto inline-flex items-center justify-center rounded-xl border border-gold/40 px-5 py-3 text-sm font-semibold text-gold hover:bg-gold/10 transition"
           >
-            Começar por R$ 29,90
+            Começar por R$ 19,90
           </a>
         </div>
 
@@ -66,8 +65,9 @@ export function PricingPlans() {
               <div className="text-xs text-muted-foreground line-through">De R$ 1.358,00 por</div>
               <div className="flex items-baseline gap-1">
                 <span className="text-sm text-gold">R$</span>
-                <span className="text-gradient-gold font-mono-display text-5xl font-bold">59,90</span>
+                <span className="text-gradient-gold font-mono-display text-5xl font-bold">39,90</span>
               </div>
+              <p className="text-xs text-gold font-bold mt-1">Oferta de lançamento</p>
               <p className="text-xs text-muted-foreground mt-1">Pagamento único • Acesso vitalício</p>
             </div>
             <ul className="mb-6 space-y-2.5 text-sm relative z-10">
@@ -81,10 +81,8 @@ export function PricingPlans() {
               <Item>BÔNUS: Planner Digital</Item>
             </ul>
             <a
-              onClick={() => {
-                window.location.href = "https://lastlink.com/p/C2F096D6F/checkout-payment/" + window.location.search;
-              }}
-              className="mt-auto inline-flex items-center justify-center rounded-xl bg-gradient-success px-5 py-4 text-sm font-bold text-success-foreground cta-glow relative z-10 cursor-pointer"
+              href={"https://lastlink.com/p/C2F096D6F/checkout-payment/" + window.location.search}
+              className="mt-auto inline-flex items-center justify-center rounded-xl bg-gradient-success px-5 py-4 text-sm font-bold text-success-foreground cta-glow relative z-10"
             >
               🔥 QUERO SER VIP EXPERT 🔥
             </a>

@@ -97,15 +97,13 @@ export function App() {
           </div>
 
           <a
-            onClick={() => {
-              window.location.href = "https://lastlink.com/p/C493D23B0/checkout-payment/" + window.location.search;
-            }}
-            className="mt-8 inline-flex items-center justify-center gap-2 rounded-2xl bg-gradient-success px-8 py-5 text-base sm:text-lg font-bold text-success-foreground cta-glow animate-pulse-gold hover:scale-105 transition-transform cursor-pointer"
+            href={"https://lastlink.com/p/C493D23B0/checkout-payment/" + window.location.search}
+            className="mt-8 inline-flex items-center justify-center gap-2 rounded-2xl bg-gradient-success px-8 py-5 text-base sm:text-lg font-bold text-success-foreground cta-glow animate-pulse-gold hover:scale-105 transition-transform"
           >
             🔥 QUERO DESTRAVAR MEU ACESSO AGORA 🔥
           </a>
           <p className="mt-3 text-xs sm:text-sm text-muted-foreground">
-            Oferta de lançamento limitada a partir de <span className="font-semibold text-foreground">R$ 29,90</span>
+            Oferta de lançamento limitada a partir de <span className="font-semibold text-foreground">R$ 19,90</span>
           </p>
           <p className="mt-2 text-sm text-gold font-semibold animate-pulse">
             ⚠️ Atenção: As vagas com esse desconto podem encerrar a qualquer momento!
@@ -160,13 +158,13 @@ export function App() {
             </p>
             <p className="mt-4 text-sm text-gold uppercase tracking-widest">Plano VIP Expert</p>
             <p className="mt-1 font-mono-display text-5xl sm:text-6xl font-bold text-gradient-gold">
-              R$ 59,90
+              R$ 39,90
             </p>
             <p className="mt-3 inline-block rounded-full bg-success/20 px-4 py-1.5 text-sm font-bold text-success">
-              🔥 Economia de R$ 1.298,10
+              🔥 Economia de R$ 1.318,10
             </p>
             <p className="mt-4 text-xs text-muted-foreground">
-              Ou comece pelo <strong className="text-foreground">Básico por R$ 29,90</strong>
+              Ou comece pelo <strong className="text-foreground">Básico por R$ 19,90</strong>
             </p>
           </div>
         </div>
@@ -265,10 +263,8 @@ export function App() {
 
         <div className="mt-12 text-center">
           <a
-            onClick={() => {
-              window.location.href = "https://lastlink.com/p/C493D23B0/checkout-payment/" + window.location.search;
-            }}
-            className="inline-flex items-center justify-center rounded-2xl bg-gradient-success px-8 py-4 text-base font-bold text-success-foreground cta-glow cursor-pointer"
+            href={"https://lastlink.com/p/C493D23B0/checkout-payment/" + window.location.search}
+            className="inline-flex items-center justify-center rounded-2xl bg-gradient-success px-8 py-4 text-base font-bold text-success-foreground cta-glow"
           >
             🔥 QUERO APRENDER TODOS OS CORTES 🔥
           </a>
