@@ -3,8 +3,8 @@ export default async function handler(req, res) {
     return res.status(405).json({ message: 'Method Not Allowed' });
   }
 
-  const PIXEL_ID = '1081546237433193';
-  const ACCESS_TOKEN = 'EAAWA9CBIiHYBRT2N6ZBi5rUwaRjZC28AQNuqIVwALOYxB4iYHi5VgJyWD84t512fonfnXPdlNnNdMhZBxmMds8bUEL3bWkHRf45ziCePyuVFGYAduZCvdtWsyviyldxqlltOu1mCQtFmIDfinZCEuxPbBuhURkoScoX6FedjvEBIglU9FyZBVshJqg0HNfggZDZD';
+  const PIXEL_ID = '1006218152325099';
+  const ACCESS_TOKEN = 'EAAXiHWqAkcIBRpNwziPMCqU75lNpPpUSa4ru4GC6IUzZBYemyCZB6Rg650u3JTVZBbgbJITRMZAq78ZAoQW3RZAPi7Ae2KYgM9BEldCYlub1KNqCw9TADcRA09dE6mE6RIfTvbcuOcpoyKd8rax2xyZAABvTvnOanXzrr4aIP8Fho8fuOywdlmO5aOZCky5iFwZDZD';
   const url = `https://graph.facebook.com/v19.0/${PIXEL_ID}/events?access_token=${ACCESS_TOKEN}`;
 
   const clientIpAddress = req.headers['x-forwarded-for'] || req.socket?.remoteAddress;
